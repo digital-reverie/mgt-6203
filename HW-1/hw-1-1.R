@@ -63,7 +63,7 @@ VIF_weight_manual <- 1 / (1 - R2_weight)
 
 VIF_weight_manual
 
-model_reduced <- lm(Price ~ Age + KM + HP + Weight, data = cars) # example, adjust based on your Step 6
+model_reduced <- lm(Price ~ Age + KM + HP + Automatic + Gears + Weight, data = cars)
 summary(model_reduced)
 
 summary(model_full)$r.squared
